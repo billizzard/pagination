@@ -58,6 +58,6 @@ class PaginationExtension extends \Twig_Extension
             $data['url'] = $this->urlBuilder->removeParam('page')->addParam('page', '')->getUrl();
         }
 
-        echo $environment->render('grid_view/pagination.html.twig', ['data' => $data]);
+        echo $environment->render('Templates/pagination.html.twig', ['data' => $data]);
     }
 }
